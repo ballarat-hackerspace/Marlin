@@ -143,7 +143,7 @@
 // Only a few motherboards support this, like RAMPS, which have dual extruder support (the 2nd, often unused, extruder driver is used
 // to control the 2nd Z axis stepper motor). The pins are currently only defined for a RAMPS motherboards.
 // On a RAMPS (or other 5 driver) motherboard, using this feature will limit you to using 1 extruder.
-//#define Z_DUAL_STEPPER_DRIVERS
+#define Z_DUAL_STEPPER_DRIVERS
 
 #ifdef Z_DUAL_STEPPER_DRIVERS
   #undef EXTRUDERS
@@ -327,7 +327,7 @@
 // Babystepping enables the user to control the axis in tiny amounts, independently from the normal printing process
 // it can e.g. be used to change z-positions in the print startup phase in real-time
 // does not respect endstops!
-//#define BABYSTEPPING
+#define BABYSTEPPING
 #ifdef BABYSTEPPING
   #define BABYSTEP_XY  //not only z, but also XY in the menu. more clutter, more functions
   #define BABYSTEP_INVERT_Z false  //true for inverse movements in Z
